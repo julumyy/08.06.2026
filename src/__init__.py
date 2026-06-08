@@ -45,6 +45,14 @@ Data is loaded from JSON files in the ``data/`` directory, then transformed into
 typed model instances. This keeps business operations explicit and easier to
 test than working with raw dictionaries.
 
+Example:
+-------
+    >>> manager = Manager()
+    >>> manager.calculate_annual_balance(year=2023)
+    >>> manager.get_top_debtors(month=5)
+    >>> manager.get_debtors(apartment_key="apart-polanka", year=2023, month=5)
+    >>> manager.check_tenant_blaclist(tenant_name="Jan Nowak")
+
 Highlights
 ----------
 - Strongly typed domain models for safer data handling.
