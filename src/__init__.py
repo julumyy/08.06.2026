@@ -21,6 +21,16 @@ Package structure
 - ``src.models`` defines all domain entities and configuration parameters.
 - ``src.manager`` provides orchestration and reporting logic on top of models.
 
+Args:
+----
+- year(int): The year for which to calculate the balance.
+- month(int): The month for which to calculate the balance.
+
+Returns:
+-------
+- float: The annual balance
+- string: The name of a tenant, apartment, room
+
 How the package is used
 -----------------------
 Typical flow:
@@ -45,5 +55,6 @@ Highlights
 Authors
 ------
 Łukasz Kułacz - initial implementation, testing, documentation
+Julia Kurowska
 
 """
